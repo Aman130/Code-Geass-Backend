@@ -17,7 +17,9 @@ const executeCpp = (filepath, inputData) => {
   // console.log(playgroundPath);
   // console.log(inputPath);
   // console.log(filepath);
+
   inputData = inputData.replace(/\n/g, " ");
+
   // const command = `touch "${inputPath}" && echo ${inputData} > "${inputPath}"`;
 
   // const command = `touch "${inputPath}" && echo ${inputData} > "${inputPath}" && g++ "${filepath}" -o "${outPath}" && "${outPath}" < "${inputPath}"`;

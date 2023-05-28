@@ -30,10 +30,10 @@ const checkProblemController = async (req, res) => {
             userOutput = await executePy(filePath, inputPath);
         }
         userOutput = userOutput.trim();
-        console.log(userOutput);
-        console.log("---");
-        console.log(problem.output);
-        console.log("---");
+        // console.log(userOutput);
+        // console.log("---");
+        // console.log(problem.output);
+        // console.log("---");
         
         // userOutput = userOutput.replace(/\n/g, "    ");
         // problem.output = problem.output.replace(/\n/g, "    ");
