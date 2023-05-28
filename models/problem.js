@@ -15,6 +15,7 @@ const problemSchema = mongoose.Schema({
 problemSchema.pre('save', function(next) {
     this.slug = slugify(this.title, {lower: true, strict: true});
     let inputFileDir = path.join(__dirname, "../inputs");
+    console.log(inputFileDir)
     writeContentInFile(inputFileDir, this.slug + ".txt", this.input);
     this.output = (this.output).trim();
     next();
