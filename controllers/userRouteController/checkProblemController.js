@@ -30,14 +30,16 @@ const checkProblemController = async (req, res) => {
             userOutput = await executePy(filePath, inputPath);
         }
         userOutput = userOutput.trim();
-        //console.log(userOutput);
-        // console.log("---");
-        // console.log(problem.output);
+        console.log(userOutput);
+        console.log("---");
+        console.log(problem.output);
+        console.log("---");
         
         // userOutput = userOutput.replace(/\n/g, "    ");
         // problem.output = problem.output.replace(/\n/g, "    ");
-        //console.log(JSON.stringify(userOutput));
-        // console.log(userOutput)
+        console.log(JSON.stringify(userOutput));
+        console.log("---");
+        console.log(userOutput)
         problem.output=problem.output.replace(/\n/g, "\r\n");
         if (userOutput === problem.output) {
             let addScore;
