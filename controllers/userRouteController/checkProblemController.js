@@ -20,7 +20,7 @@ const checkProblemController = async (req, res) => {
             return;
         }
         const filePath = await generateFile(lang, code);
-        const inputPath = `${path.join(__dirname, '../../inputs')}\\${slug}.txt`;
+        const inputPath = `${path.join(__dirname, '../../inputs')}\${slug}.txt`;
         let userOutput;
         if (lang === "cpp") {
             userOutput = await executeCpp(filePath, inputPath);

@@ -12,9 +12,9 @@ const executeCpp = (filepath, inputPath) => {
   const jobId = path.basename(filepath).split(".")[0];
   const outPath = path.join(playgroundPath, `${jobId}.out`);
 
-  // console.log(inputPath);
-  // console.log(filepath);
-  // console.log(outPath);
+  console.log(inputPath);
+  console.log(filepath);
+  console.log(outPath);
 
   const command = `g++ "${filepath}" -o "${outPath}" && timeout 2s "${outPath}" < "${inputPath}"`;
 
