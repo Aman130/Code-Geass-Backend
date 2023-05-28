@@ -24,7 +24,8 @@ const editProblemRoute = require("./routes/adminRoutes/editProblemRoute");
 
 // Allow cross-origin requests from http://localhost:3000 with specific headers and methods
 app.use(cors({
-    origin: 'http://localhost:3000',
+    // origin: 'http://localhost:3000',
+    origin: 'https://6472fcb1e519210a74996c67--phenomenal-druid-a897ae.netlify.app',
     methods: '*',
     allowedHeaders: ['Content-Type', 'Authorization']
 }));
