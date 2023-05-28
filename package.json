@@ -7,7 +7,7 @@
     "start": "node app.js",
     "dev": "nodemon app.js"
   },
-  "author": "shivam-bhadani",
+  "author": "Aman Mamgain",
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^5.1.0",
